@@ -5,6 +5,10 @@
   "exports": "./dist/index.js",
   "author": "Andreas Jantschnig <andreas.jantschnig@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajantsch/node-typescript-esm-boilerplate"
+  },
   "engines": {
     "node": ">=20"
   },
