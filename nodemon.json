@@ -7,7 +7,7 @@
     },
     "ext": "ts,js,json",
     "execMap": {
-        "ts": "node --import=./register.js"
+        "ts": "node --import=./register.js --env-file=.env"
     },
     "events": {
         "start": "yarn lint"
