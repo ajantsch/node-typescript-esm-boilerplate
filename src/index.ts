@@ -1,6 +1,7 @@
 import express from "express";
 import helmet from "helmet";
 
+import logger from "@util/logger.js";
 import { demo } from "@demo/demo.js";
 
 const { PORT } = process.env;
@@ -11,5 +12,5 @@ const app = express();
 app.use(helmet());
 
 app.listen(port, function () {
-  console.info(`${demo()}-service is running on port ${port}`);
+  logger.info(`${demo()}-service is running on port ${port}`);
 });
