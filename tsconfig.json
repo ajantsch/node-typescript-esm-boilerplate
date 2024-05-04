@@ -1,0 +1,44 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "importHelpers": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "useUnknownInCatchVariables": false,
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "lib": [
+      "ESNext"
+    ],
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ],
+    "paths": {
+      "@demo/*": [
+        "demo/*"
+      ]
+    }
+  },
+  "ts-node": {
+    "esm": true,
+    "compiler": "ts-patch/compiler"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+  ]
+}

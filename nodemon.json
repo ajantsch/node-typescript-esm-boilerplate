@@ -1,0 +1,15 @@
+{
+    "watch": [
+        "src/"
+    ],
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "ext": "ts,js,json",
+    "execMap": {
+        "ts": "node --import=./register.js"
+    },
+    "events": {
+        "start": "yarn lint"
+    }
+}
